@@ -2548,7 +2548,7 @@ class CF_Object
     private function _initialize()
     {
         list($status, $reason, $etag, $last_modified, $content_type,
-            $content_length, $metadata, $manifest, $headers) =
+            $content_length, $metadata, $manifest, $delete_at, $delete_after, $headers) =
                 $this->container->cfs_http->head_object($this);
         #if ($status == 401 && $this->_re_auth()) {
         #    return $this->_initialize();
